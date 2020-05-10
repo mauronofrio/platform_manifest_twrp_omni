@@ -6,13 +6,14 @@
 
 <!-- TWRP lives in TeamWin android-10.0 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery"/>
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-10.0"/>
+    <project path="bootable/recovery" name="AndroiableDroid/android_bootable_recovery-1" remote="TeamWin" revision="decrypt4"/>
 
 <!-- Include external Magisk repo for repack binaries -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="master" />
 	
 <!-- Include mauronofrio android_system_update_engine to build a good update_engine_sideload -->
     <project path="system/update_engine" name="mauronofrio/android_system_update_engine" remote="github" revision="android-10" />
+    <project path="system/core" name="AndroiableDroid/android_system_core" remote="github" revision="android-10" />
 <!-- Include Lineage android_hardware_qcom_bootctrl to build a good update_engine_sideload -->
     <project path="hardware/qcom/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" remote="github" revision="lineage-17.1" />
 </manifest>
